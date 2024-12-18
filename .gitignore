@@ -1,0 +1,43 @@
+# Dependency directories
+node_modules/
+dist/
+build/
+coverage/
+
+# OS-specific files
+*.log
+*.bak
+*.swp
+*.tmp
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary files
+*.tmp
+*.bak
+
+# Compiled files
+*.class
+*.dll
+*.o
+
+# Log files
+*.log
+
+# Editor-specific files
+.idea/
+.vscode/
+
+# Flutter
+build/
+flutter_export_environment.sh
