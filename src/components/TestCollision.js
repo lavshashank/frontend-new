@@ -48,7 +48,7 @@ function TestCollision() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false); // Loading state
 
-  const apiBaseUrl = `https://13.233.102.212:5000/`; // Update API base URL
+  const apiBaseUrl = `projectco.duckdns.org:5000/`; // Update API base URL
 
   const handleFileChange = (e) => {
     setVideoFile(e.target.files[0]);
