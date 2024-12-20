@@ -1,4 +1,10 @@
 [redirects]
+  # SPA redirect rule
   from = "/*"
   to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/api/*" # Match API requests
+  to = "http://13.233.102.212:5000/:splat" # Forward to your backend
   status = 200
