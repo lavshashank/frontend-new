@@ -164,6 +164,11 @@ function TestCollision() {
           ))}
         </div>
       </div>
+      <div style={theme.repoSection}>
+        <h3 style={theme.repoHeading}>Repository Links</h3>
+        <p>Frontend Code: <a href="https://github.com/lavshashank/frontend-new.git" target="_blank" rel="noopener noreferrer">Frontend Repository</a></p>
+        <p>Backend Code: <a href="https://github.com/lavshashank/backend-new.git" target="_blank" rel="noopener noreferrer">Backend Repository</a></p>
+      </div>
     </div>
   );
 }
@@ -291,6 +296,19 @@ const theme = {
     fontWeight: "bold",
     transition: "background-color 0.3s ease-in-out",
     textAlign: "center",
+  },
+  repoSection: {
+    marginTop: "40px",
+    textAlign: "center",
+    padding: "20px",
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    borderRadius: "10px",
+    boxShadow: "0 6px 15px rgba(0, 0, 0, 0.1)",
+  },
+  repoHeading: {
+    fontSize: "3rem",
+    color: "#00f3ff",
+    fontWeight: "bold",
   },
 };
 
