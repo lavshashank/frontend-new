@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';  // Importing Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";  // Ensure to import Bootstrap CSS here
+import "bootstrap/dist/css/bootstrap.min.css";
 import Sample1 from "../assets/Sample1.png";
 import Sample2 from "../assets/Sample2.png";
 import Sample3 from "../assets/Sample3.png";
@@ -46,16 +45,16 @@ function TestCollision() {
   const [streamUrl, setStreamUrl] = useState("");
   const [collisionWarning, setCollisionWarning] = useState(null);
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // Loading state
+  const [isLoading, setIsLoading] = useState(false);
 
-  const apiBaseUrl = `http://13.233.102.212:5000/`; // Update API base URL
+  const apiBaseUrl = `http://13.204.0.149:5000/`; // Replace with your HTTPS backend URL
 
   const handleFileChange = (e) => {
     setVideoFile(e.target.files[0]);
     setStreamUrl("");
     setError("");
     setCollisionWarning(null);
-    setIsLoading(false); // Reset loading state
+    setIsLoading(false);
   };
 
   const handleUpload = async () => {
@@ -64,7 +63,7 @@ function TestCollision() {
       return;
     }
 
-    setIsLoading(true); // Set loading state
+    setIsLoading(true);
 
     const formData = new FormData();
     formData.append("video", videoFile);
@@ -92,7 +91,6 @@ function TestCollision() {
           setError("Error connecting to the event stream.");
           eventSource.close();
         };
-
       } else {
         const errorData = await response.json();
         setError(errorData.error || "An error occurred.");
@@ -100,7 +98,7 @@ function TestCollision() {
     } catch (err) {
       setError("Failed to connect to the server.");
     } finally {
-      setIsLoading(false); // Reset loading state
+      setIsLoading(false);
     }
   };
 
@@ -109,7 +107,9 @@ function TestCollision() {
       <h1 style={theme.headingPrimary}>
         Test Our GENAI-Integrated Forward Collision Warning System
       </h1>
-      <h2 style={theme.headingSecondary}>Upload videos and analyze collision risks in real-time!</h2>
+      <h2 style={theme.headingSecondary}>
+        Upload videos and analyze collision risks in real-time!
+      </h2>
       <div style={theme.inputContainer}>
         <input
           type="file"
@@ -166,8 +166,26 @@ function TestCollision() {
       </div>
       <div style={theme.repoSection}>
         <h3 style={theme.repoHeading}>Repository Links</h3>
-        <p>Frontend Code: <a href="https://github.com/lavshashank/frontend-new.git" target="_blank" rel="noopener noreferrer">Frontend Repository</a></p>
-        <p>Backend Code: <a href="https://github.com/lavshashank/backend-new.git" target="_blank" rel="noopener noreferrer">Backend Repository</a></p>
+        <p>
+          Frontend Code:{" "}
+          <a
+            href="https://github.com/lavshashank/frontend-new.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Frontend Repository
+          </a>
+        </p>
+        <p>
+          Backend Code:{" "}
+          <a
+            href="https://github.com/lavshashank/backend-new.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Backend Repository
+          </a>
+        </p>
       </div>
     </div>
   );
