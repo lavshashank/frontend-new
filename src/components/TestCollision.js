@@ -47,7 +47,7 @@ function TestCollision() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const apiBaseUrl = `http://13.204.0.149:5000/`; // Replace with your HTTPS backend URL
+  const apiBaseUrl = `https:projectco.indfabrico.com`; // Replace with your HTTPS backend URL
 
   const handleFileChange = (e) => {
     setVideoFile(e.target.files[0]);
