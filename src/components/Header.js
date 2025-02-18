@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { FaHome, FaCarCrash } from "react-icons/fa"; // Importing icons
+import { FaHome} from "react-icons/fa"; // Importing icons
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../styles/Header.css";
 
