@@ -62,9 +62,9 @@ const styles = {
 const TestedVideos = () => {
   const navigate = useNavigate(); // For navigation
 
-  const handleTestModel = () => {
-    navigate("/test-collision"); // Redirect to TestCollision.js
-  };
+  // const handleTestModel = () => {
+  //   navigate("/test-collision"); // Redirect to TestCollision.js
+  // };
 
   return (
     <section style={styles.section}>
@@ -89,9 +89,9 @@ const TestedVideos = () => {
       </div>
 
       {/* Button to Test the Model */}
-      <button style={styles.button} onClick={handleTestModel}>
+      {/* <button style={styles.button} onClick={handleTestModel}>
         Test the Model Yourself
-      </button>
+      </button> */}
     </section>
   );
 };

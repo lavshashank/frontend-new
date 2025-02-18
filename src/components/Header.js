@@ -32,12 +32,12 @@ function Header() {
           <FaHome className="icon" /> Home
         </button>
 
-        <button
+        {/* <button
           className="link-button"
           onClick={() => navigate("/test-collision")} // Navigate to Test Collision
         >
           <FaCarCrash className="icon" /> Test Collision
-        </button>
+        </button> */}
       </div>
     </nav>
   );
